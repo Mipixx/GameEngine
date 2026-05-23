@@ -1,0 +1,51 @@
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.ENV
+.ENV.local
+.env
+.env.local
+.env.*
+.venv/
+venv/
+ENV/
+ENV.local
+
+# Testing
+.coverage
+coverage/
+htmlcov/
+.nox/
+.tox/
+.pytest_cache/
+.mypy_cache/
+
+# Build and distribution artifacts
+build/
+dist/
+*.egg
+*.egg-info/
+*.so
+.libs/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+```
