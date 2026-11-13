@@ -59,6 +59,13 @@ Examples:
         help="Enable verbose output"
     )
     
+    parser.add_argument(
+        "--level",
+        type=str,
+        default=None,
+        help="Level JSON file (from editor) to load on server start"
+    )
+
     args = parser.parse_args()
     
     # Determine host
@@ -95,7 +102,7 @@ Examples:
         print("[DEBUG] Starting server...")
     
     try:
-        run_server(host, args.port)
+        run_server(host, args.port, getattr(args, 'level', None))
     except KeyboardInterrupt:
         print("\n\n[INFO] Server shutdown requested")
     except Exception as e:
